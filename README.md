@@ -1,4 +1,4 @@
-# python-for-students
+# python-tools-for-students
 
 This projects aims to teach students the basics of how to use 
 **powerful Python Tools** for the day to day life at university:
