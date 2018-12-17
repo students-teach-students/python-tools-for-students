@@ -10,16 +10,37 @@ This projects aims to teach students the basics of how to use
      * Doing calculations on data
      * Fitting of data
      * Visualisation (plotting)
+     
+### Where are we with this project right now?
+At the moment we are gathering ideas what to teach and build a usefull 
+structure to teach the materials. Which is why **this is your chance** 
+to tell us what you want to learn. Just open an issue, write about what you want to learn
+(examples help with explanaitions) and we can discuss
+if this should be part of this course or is too much of an edge case.
+And ofcourse we are also allways happy if you want to contribute and teach others the skills
+you aquired.
 
-## What do you need?
-* A base knowlage in Python
 
-We won't teach you python from from the ground up so you already have some basic knowlage about python.
-For this porpouse we recomment that you compleate i.e. the
-[SoloLearn Python 3 Tutorial](https://www.sololearn.com/Course/Python/)
-, which is also available as a free mobile app and/or 
-watch the tutorial made by 
-[sentdex](https://www.youtube.com/watch?v=eXBD2bB9-RA&list=PLQVvvaa0QuDeAams7fkdcwOGBpGdHpXln)
+### What do you need?
+* **A base knowlage in Python**
+
+    We won't teach you python from from the ground up so you already have some basic knowlage about python.
+    For this porpouse we recomment that you compleate i.e. the
+    [SoloLearn Python 3 Tutorial](https://www.sololearn.com/Course/Python/), 
+    which is also available as a free mobile app and/or watch the tutorials made by 
+    [sentdex](https://www.youtube.com/watch?v=eXBD2bB9-RA&list=PLQVvvaa0QuDeAams7fkdcwOGBpGdHpXln)
+    
+* **A working python installation**
+
+    The best way to get Python up and running for your OS is to download 
+    [Anaconda](https://www.anaconda.com/download/), which is crossplatform and
+    comes with most tools needed prebundeled (batteries included).
+    
+* **A github account**
+
+    The github account is needed so you can write issues and tell us what **YOU** want to learn, 
+    what we should improve or if we did something wrong.
+    
 
 ## Who are we?
 We are a group of master students from TU-Berlin (Germany), 
