@@ -1,5 +1,3 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab)
-
 # python-tools-for-students
 
 This projects aims to teach students the basics of how to use 
