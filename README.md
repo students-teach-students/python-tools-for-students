@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/s-weigand/python-tools-for-students.svg?branch=master)](https://travis-ci.org/s-weigand/python-tools-for-students)
-[![Build status](https://ci.appveyor.com/api/projects/status/05xsqpqt74uxjyfa?svg=true)](https://ci.appveyor.com/project/s-weigand/python-tools-for-students)
+[![Build Status](https://travis-ci.org/s-weigand/python-tools-for-students.svg?branch=master)](https://travis-ci.org/students-teach-students/python-tools-for-students)
+[![Build status](https://ci.appveyor.com/api/projects/status/05xsqpqt74uxjyfa?svg=true)](https://ci.appveyor.com/project/students-teach-students/python-tools-for-students)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab)
 
 # python-tools-for-students
