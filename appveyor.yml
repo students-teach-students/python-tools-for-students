@@ -32,13 +32,13 @@ cache:
   - '%LOCALAPPDATA%\pip\Cache\http'
   - '%LOCALAPPDATA%\pip\Cache\wheels'
   # Cache Tox envs
-  - 'C:\projects\python-tools-for-students\.tox'
+  - '%APPVEYOR_BUILD_FOLDER%\.tox'
 
 
 install:
   # Show size of cache
   - if exist "%LOCALAPPDATA%\pip\Cache" C:\cygwin\bin\du -hs "%LOCALAPPDATA%\pip\Cache"
-  - if exist "C:\projects\pytest-localftpserver\.tox" C:\cygwin\bin\du -hs "C:\projects\pytest-localftpserver\.tox"
+  - if exist "%APPVEYOR_BUILD_FOLDER%\.tox" C:\cygwin\bin\du -hs "%APPVEYOR_BUILD_FOLDER%\.tox"
   # set python path
   - SET PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%
 
@@ -65,8 +65,8 @@ on_finish:
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -mtime +360 -delete
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -size +10M -delete
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -empty -delete
-  - C:\cygwin\bin\find "C:\projects\python-tools-for-students\.tox" -type f -mtime +360 -delete
-  - C:\cygwin\bin\find "C:\projects\python-tools-for-students\.tox" -empty -delete
+  - C:\cygwin\bin\find "%APPVEYOR_BUILD_FOLDER%\.tox" -type f -mtime +360 -delete
+  - C:\cygwin\bin\find "%APPVEYOR_BUILD_FOLDER%\.tox" -empty -delete
   # Show size of cache
   - C:\cygwin\bin\du -hs "%LOCALAPPDATA%\pip\Cache"
-  - C:\cygwin\bin\du -hs "C:\projects\python-tools-for-students\.tox"
+  - C:\cygwin\bin\du -hs "%APPVEYOR_BUILD_FOLDER%\.tox"
