@@ -71,3 +71,14 @@ is much bigger than the one of programmers which only speak german.
 And since most problems you might have, other people already had and solved them,  it is of benefit 
 to know the terms we introduce in english, since this gives you access to a bigger knowledge base 
 (google/duckduckgo and stackoverflow are your friends).
+
+
+## Strange comments in the notebooks
+
+In some notebook cells you may encounter lines that start with ``# NBVAL_``, 
+those comments is an instruction for [nbval](https://github.com/computationalmodelling/nbval),
+which we use for testing our notebooks and are of no concern for user 
+(as contributer you should have a look at the [docs](https://nbval.readthedocs.io/en/latest/), 
+on how to use this instructions). 
+The testing of the executebility of notebooks guarantees that all notebooks will run properly and 
+also give contributers/reviewers the ensurence that the notebooks they are working on behave as expected.
