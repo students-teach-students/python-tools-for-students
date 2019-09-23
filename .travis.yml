@@ -77,3 +77,7 @@ install:
   - pip install tox-travis
 
 script: tox
+
+after_script:
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then curl https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab; fi
+
