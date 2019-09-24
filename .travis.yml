@@ -79,8 +79,6 @@ install:
 script: tox
 
 after_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ];
-    then
-    curl https://gke.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master &&
-    curl https://ovh.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master;
-    fi
+  # Use Binder build API to trigger repo2docker to build image on GKE and OVH Binder Federation clusters
+  - bash binder/trigger_binder.sh https://gke.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
+  - bash binder/trigger_binder.sh https://ovh.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
