@@ -7,22 +7,22 @@ matrix:
   fast_finish: true
   include:
     # - python: 3.6
-      # env: TOXENV=flake8
-      # after_success:
-        # - echo "done"
+    # env: TOXENV=flake8
+    # after_success:
+    # - echo "done"
 
     # - python: 3.6
-      # env: TOXENV=custom_config
+    # env: TOXENV=custom_config
 
     # - python: 3.6
-      # env: TOXENV=docs
-      # after_success:
-        # - echo "done"
+    # env: TOXENV=docs
+    # after_success:
+    # - echo "done"
 
     # - python: 3.6
-      # env: TOXENV=docs-links
-      # after_success:
-        # - echo "done"
+    # env: TOXENV=docs-links
+    # after_success:
+    # - echo "done"
 
     - language: python
       python: "3.6"
@@ -70,7 +70,7 @@ matrix:
 
   allow_failures:
 #      this tests are allowed to fail since they rely external resources
-    # - env: TOXENV=docs-links
+# - env: TOXENV=docs-links
 
 install:
   - python -m pip install -U pip>=8.1.2
@@ -79,5 +79,8 @@ install:
 script: tox
 
 after_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then curl https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab; fi
-
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]
+    then
+    curl https://gke.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
+    curl https://ovh.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
+    fi
