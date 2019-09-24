@@ -79,8 +79,8 @@ install:
 script: tox
 
 after_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ];
     then
-    curl https://gke.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
-    curl https://ovh.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master
+    curl https://gke.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master &&
+    curl https://ovh.mybinder.org/build/gh/students-teach-students/python-tools-for-students/master;
     fi
