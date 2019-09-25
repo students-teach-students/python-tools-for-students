@@ -19,7 +19,6 @@
 # absolute, like shown here.
 #
 import os
-import sys
 
 # -- General configuration ---------------------------------------------
 
@@ -84,6 +83,7 @@ todo_include_todos = False
 # This is processed by Jinja2 and inserted before each notebook
 nbsphinx_prolog = r"""
 {% set docname = env.metadata[env.docname]['nbsphinx-link-target'][3:] %}
+{% set binder_urls = 'lab/tree/' + env.metadata[env.docname]['nbsphinx-link-target'][3:] %}
 .. only:: html
 
     .. role:: raw-html(raw)
@@ -93,7 +93,7 @@ nbsphinx_prolog = r"""
 
         This page was generated from `{{ docname }}`__.
         Interactive online version:
-        :raw-html:`<a href="https://mybinder.org/v2/gh/s-weigand/python-tools-for-students/test-remove-hashtag/master?urlpath=lab/tree/{{ docname }}"><img alt="Binder badge" src="https://mybinder.org/badge_logo.svg" style="vertical-align:text-bottom"></a>`
+        :raw-html:`<a href="https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath={{ binder_urls | replace('/','%2F') }}"><img alt="Binder badge" src="https://mybinder.org/badge_logo.svg" style="vertical-align:text-bottom"></a>`
 
     __ https://github.com/students-teach-students/python-tools-for-students/blob/master/{{ docname | urlencode }}
 
