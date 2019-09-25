@@ -6,7 +6,7 @@ Welcome to python-tools-for-students's documentation!
     :caption: Contents:
 
     readme
-    installation
+    getting_started
     material
     authors
 ..    contributing
