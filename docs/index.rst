@@ -2,13 +2,13 @@ Welcome to python-tools-for-students's documentation!
 =====================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Contents:
 
-   readme
-   installation
-   material
-   authors
+    readme
+    installation
+    material
+    authors
 ..    contributing
 
 Indices and tables
