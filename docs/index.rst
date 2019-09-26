@@ -9,7 +9,6 @@ Welcome to python-tools-for-students's documentation!
     getting_started
     material
     authors
-..    contributing
 
 Indices and tables
 ==================
