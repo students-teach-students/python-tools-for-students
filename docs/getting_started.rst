@@ -8,24 +8,42 @@ Run it locally
 --------------
 
 This is the ideal way, since you will have everything you need
-in you day to day student life installed on you computer.
+in you day to day student life installed on you computer and
+all your data will persist.
 
 Install python
 ^^^^^^^^^^^^^^
 
 Anaconda
 """"""""
-Anaconda is our the recommended on all operating systems
+Anaconda is our recommended to install python on all operating systems,
+since it comes with most needed packages prebundled (batteries included).
+Another bonus is that ``conda`` isn't just a python package manager like
+``pip``, but a package manager for multiple resources
+(i.e. `node.js`_ or `latex`_) and also an `environment`_ manager.
+Yet another bonus of ``conda`` is that is has a build pipeline in place,
+which allows to install all packages from binary (no compiling needed from
+your side, which at times can be pretty time consuming).
+Download the installer from the official website of  `Anaconda`_, follow
+the instructions and you will be good to go.
+
+.. note::
+    If you are using a Posix system (Linux/OsX) you don't want to mess
+    with the system python, since many system tools rely on it,
+    and in a worse case scenario you could break your Os.
 
 Pure CPython
 """"""""""""
 
-If you don't have `pip`_ installed, this `Python installation guide`_ can guide
-you through the process.
 
-.. _pip:  https://pip.pypa.io/en/stable/
+If you don't want to install conda, this `Python installation guide`_ can guide
+you through the process tof getting the pure CPython Interpreter.
+
 .. _Python installation guide: https://docs.python-guide.org/starting/installation/
 .. _Anaconda: https://www.anaconda.com/distribution/
+.. _node.js: https://nodejs.org/en/
+.. _latex: https://www.latex-project.org/
+.. _environment: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 
 Get the project
