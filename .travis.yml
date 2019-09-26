@@ -12,9 +12,15 @@ matrix:
     # - echo "done"
 
     - python: 3.6
+      before_install:
+        - sudo apt-get update -qq
+        - sudo apt-get install -y pandoc
       env: TOXENV=docs
 
     - python: 3.6
+      before_install:
+        - sudo apt-get update -qq
+        - sudo apt-get install -y pandoc
       env: TOXENV=docs-links
 
     - language: python
