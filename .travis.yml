@@ -11,18 +11,11 @@ matrix:
     # after_success:
     # - echo "done"
 
-    # - python: 3.6
-    # env: TOXENV=custom_config
+    - python: 3.6
+      env: TOXENV=docs
 
-    # - python: 3.6
-    # env: TOXENV=docs
-    # after_success:
-    # - echo "done"
-
-    # - python: 3.6
-    # env: TOXENV=docs-links
-    # after_success:
-    # - echo "done"
+    - python: 3.6
+      env: TOXENV=docs-links
 
     - language: python
       python: "3.6"
@@ -69,8 +62,8 @@ matrix:
       script: tox -e py37
 
   allow_failures:
-#      this tests are allowed to fail since they rely external resources
-# - env: TOXENV=docs-links
+    #  this tests are allowed to fail since they rely external resources
+    - env: TOXENV=docs-links
 
 install:
   - python -m pip install -U pip>=8.1.2
