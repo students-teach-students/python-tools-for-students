@@ -11,17 +11,39 @@ matrix:
     # after_success:
     # - echo "done"
 
-    - python: 3.6
+    - language: generic
+      python: 3.6
+      env: docs
       before_install:
-        - sudo apt-get update -qq
-        - sudo apt-get install -y pandoc
-      env: TOXENV=docs
+        - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+        - bash miniconda.sh -b -p $HOME/miniconda
+        - export PATH="$HOME/miniconda/bin:$PATH"
+        - conda update conda -y
+        - conda create -n py36 python=3.6 -y
+      install:
+        - source activate py36
+        - conda config --add channels conda-forge
+        - conda install -y --name py36 tox pandoc
+        - pip freeze
+        - pandoc -v
+      script: tox -e docs
 
-    - python: 3.6
+    - language: generic
+      python: 3.6
+      env: docs-links
       before_install:
-        - sudo apt-get update -qq
-        - sudo apt-get install -y pandoc
-      env: TOXENV=docs-links
+        - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+        - bash miniconda.sh -b -p $HOME/miniconda
+        - export PATH="$HOME/miniconda/bin:$PATH"
+        - conda update conda -y
+        - conda create -n py36 python=3.6 -y
+      install:
+        - source activate py36
+        - conda config --add channels conda-forge
+        - conda install -y --name py36 tox pandoc
+        - pip freeze
+        - pandoc -v
+      script: tox -e docs-links
 
     - language: python
       python: "3.6"
@@ -69,7 +91,7 @@ matrix:
 
   allow_failures:
     #  this tests are allowed to fail since they rely external resources
-    - env: TOXENV=docs-links
+    - env: docs-links
 
 install:
   - python -m pip install -U pip>=8.1.2
