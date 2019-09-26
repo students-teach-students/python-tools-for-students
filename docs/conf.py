@@ -31,6 +31,9 @@ import os
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
+    "sphinx.ext.extlinks",
+    "sphinx.ext.mathjax",
+    "sphinx_copybutton",
     "m2r",
     "nbsphinx",
     "sphinx.ext.mathjax",

@@ -1,6 +1,8 @@
 version: 2
 
-formats: all
+formats:
+  - epub
+  - htmlzip
 
 build:
   image: latest
