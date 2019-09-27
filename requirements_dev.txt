@@ -19,6 +19,6 @@ nbsphinx>=0.4.2
 # temporarily use my implemented fix
 # until https://github.com/vidartf/nbsphinx-link/pull/10
 # is merged and released
-git+https://github.com/s-weigand/nbsphinx-link.git@fix-image-linking
+git+https://github.com/s-weigand/nbsphinx-link.git
 ipykernel>=5.1.2
 ipython>=7.8.0
