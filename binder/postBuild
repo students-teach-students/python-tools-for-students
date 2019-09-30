@@ -5,5 +5,5 @@ python -c "import matplotlib as mpl; mpl.use('Agg'); import pylab as plt; fig, a
 
 test -e test.png && rm test.png
 
-jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0 @jupyterlab/latex
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0 @jupyterlab/latex @jupyterlab/celltags @jupyterlab/toc @ijmbarr/jupyterlab_spellchecker
 jupyter lab clean && jupyter lab build
