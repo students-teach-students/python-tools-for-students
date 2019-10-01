@@ -99,7 +99,7 @@ jobs:
 
   allow_failures:
     #  this tests are allowed to fail since they rely external resources
-    - env: docs-links
+    - name: docs-links
 
 install:
   - python -m pip install -U pip>=8.1.2
