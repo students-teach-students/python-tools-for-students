@@ -10,9 +10,12 @@ This projects aims to teach students the basics of how to use
 **powerful Python Tools** for the day to day life at university:
 
 - Solving equations
+
   - Analytically
   - Numerically
+
 - Handling data
+
   - Reading differently structured plaintext files
   - Doing calculations on data
   - Fitting of data
