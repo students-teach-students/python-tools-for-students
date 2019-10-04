@@ -1,8 +1,6 @@
 version: 2
 
-formats:
-  - epub
-  - htmlzip
+formats: all
 
 build:
   image: latest
@@ -11,3 +9,4 @@ python:
   version: 3.7
   install:
     - requirements: requirements_dev.txt
+  system_packages: true

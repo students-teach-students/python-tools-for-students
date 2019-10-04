@@ -29,16 +29,26 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
+    "nbsphinx",
+    "nbsphinx_link",
+    "sphinx_copybutton",
+    "recommonmark",
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.extlinks",
     "sphinx.ext.mathjax",
-    "sphinx_copybutton",
-    "m2r",
-    "nbsphinx",
-    "sphinx.ext.mathjax",
-    "nbsphinx_link",
+    # "sphinx.ext.imgconverter",
 ]
+
+# List of arguments to be passed to the kernel that executes the notebooks:
+nbsphinx_execute_arguments = [
+    "--InlineBackend.figure_formats={'svg', 'pdf'}",
+    "--InlineBackend.rc={'figure.dpi': 96}",
+]
+
+# Execute notebooks before conversion: 'always', 'never', 'auto' (default)
+# nbsphinx_execute = "always"
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -100,12 +110,21 @@ nbsphinx_prolog = r"""
 
     __ https://github.com/students-teach-students/python-tools-for-students/blob/master/{{ docname | urlencode }}
 
-.. raw:: latex
 
-    \nbsphinxstartnotebook{\scriptsize\noindent\strut
-    \textcolor{gray}{The following section was generated from
-    \sphinxcode{\sphinxupquote{\strut {{ docname | escape_latex }}}} \dotfill}}
 """
+
+# This is processed by Jinja2 and inserted after each notebook
+nbsphinx_epilog = r"""
+{% set docname = env.metadata[env.docname]['nbsphinx-link-target'][3:] %}
+.. raw:: latex
+    \nbsphinxstopnotebook{\scriptsize\noindent\strut
+    \textcolor{gray}{\dotfill\ \sphinxcode{\sphinxupquote{\strut
+    {{ docname | escape_latex }}}} ends here.}}
+"""
+
+mathjax_config = {
+    "TeX": {"equationNumbers": {"autoNumber": "AMS", "useLabelIds": True}}
+}
 
 # -- Options for HTML output -------------------------------------------
 
@@ -128,25 +147,56 @@ html_theme = "sphinx_rtd_theme"
 
 # -- Options for HTMLHelp output ---------------------------------------
 
+# -- Get version information and date from Git ----------------------------
+
+try:
+    from subprocess import check_output
+
+    release = check_output(["git", "describe", "--tags", "--always"])
+    release = release.decode().strip()
+    today = check_output(["git", "show", "-s", "--format=%ad", "--date=short"])
+    today = today.decode().strip()
+except Exception:
+    release = "<unknown>"
+    today = "<unknown date>"
+
+# -- Options for HTML output ----------------------------------------------
+
+html_title = project + " version " + release
+
 # Output file base name for HTML help builder.
 htmlhelp_basename = "python_tools_for_studentsdoc"
 
 
 # -- Options for LaTeX output ------------------------------------------
 
+# See https://www.sphinx-doc.org/en/master/latex.html
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+    "papersize": "a4paper",
+    "printindex": "",
+    "sphinxsetup": r"""
+        %verbatimwithframe=false,
+        %verbatimwrapslines=false,
+        %verbatimhintsturnover=false,
+        VerbatimColor={HTML}{F5F5F5},
+        VerbatimBorderColor={HTML}{E0E0E0},
+        noteBorderColor={HTML}{E0E0E0},
+        noteborder=1.5pt,
+        warningBorderColor={HTML}{E0E0E0},
+        warningborder=1.5pt,
+        warningBgColor={HTML}{FBFBFB},
+    """,
+    "preamble": r"""
+\usepackage[sc,osf]{mathpazo}
+\linespread{1.05}  % see http://www.tug.dk/FontCatalogue/urwpalladio/
+\renewcommand{\sfdefault}{pplj}  % Palatino instead of sans serif
+\IfFileExists{zlmtt.sty}{
+    \usepackage[light,scaled=1.05]{zlmtt}  % light typewriter font from lmodern
+}{
+    \renewcommand{\ttdefault}{lmtt}  % typewriter font from lmodern
+}
+\usepackage{booktabs}  % for Pandas dataframes
+""",
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -158,7 +208,7 @@ latex_documents = [
         "python_tools_for_students.tex",
         u"python-tools-for-students Documentation",
         u"Sebastian Weigand",
-        "manual",
+        "howto",
     )
 ]
 
