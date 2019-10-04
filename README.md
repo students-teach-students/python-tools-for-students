@@ -21,7 +21,7 @@ This projects aims to teach students the basics of how to use
   - Fitting of data
   - Visualization (plotting)
 
-### Where are we with this project right now?
+## Where are we with this project right now?
 
 At the moment we are gathering ideas what to teach and build a useful
 structure to teach the materials. Which is why **this is your chance**
@@ -31,7 +31,7 @@ if this should be part of this course or is too much of an edge case.
 And of course we are also always happy if you want to contribute and teach others the skills
 you acquired.
 
-### What do you need?
+## What do you need?
 
 - **A base knowledge in Python**
 
