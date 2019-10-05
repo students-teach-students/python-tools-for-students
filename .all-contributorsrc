@@ -1,5 +1,7 @@
 {
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -8,7 +10,12 @@
       "name": "Deniz Sharideh",
       "avatar_url": "https://avatars3.githubusercontent.com/u/43533494?v=4",
       "profile": "https://github.com/redbluee",
-      "contributions": ["review"]
+      "contributions": [
+        "review",
+        "doc",
+        "infra",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
