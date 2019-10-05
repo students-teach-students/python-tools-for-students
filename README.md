@@ -1,9 +1,9 @@
 [![Build Status Linux/OsX](https://api.travis-ci.org/students-teach-students/python-tools-for-students.svg?branch=master)](https://travis-ci.org/students-teach-students/python-tools-for-students)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![Build status Windows](https://ci.appveyor.com/api/projects/status/58hq73cf6iv7xxdf/branch/master?svg=true)](https://ci.appveyor.com/project/s-weigand/python-tools-for-students-3ywm2/branch/master)
 [![Documentation Status](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest)](https://python-tools-for-students.readthedocs.io/en/latest/?badge=latest)
 [![Notebook Viewer (nbviewer)](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg?sanitize=true)](https://nbviewer.jupyter.org/github/students-teach-students/python-tools-for-students/tree/master/material/)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab/tree/material)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # python-tools-for-students
 
