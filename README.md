@@ -3,6 +3,7 @@
 [![Documentation Status](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest)](https://python-tools-for-students.readthedocs.io/en/latest/?badge=latest)
 [![Notebook Viewer (nbviewer)](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg?sanitize=true)](https://nbviewer.jupyter.org/github/students-teach-students/python-tools-for-students/tree/master/material/)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab/tree/material)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # python-tools-for-students
 
@@ -81,3 +82,19 @@ is much bigger than the one of programmers which only speak german.
 And since most problems you might have, other people already had and solved them, it is of benefit
 to know the terms we introduce in english, since this gives you access to a bigger knowledge base
 (google/duckduckgo and stackoverflow are your friends).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/redbluee"><img src="https://avatars3.githubusercontent.com/u/43533494?v=4" width="100px;" alt="Deniz Sharideh"/><br /><sub><b>Deniz Sharideh</b></sub></a><br /><a href="#review-redbluee" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
