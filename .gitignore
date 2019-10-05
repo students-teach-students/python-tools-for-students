@@ -105,3 +105,9 @@ venv.bak/
 
 # vs code config
 .vscode
+
+# media files which are copied, for the docs
+docs/**/**/images/
+
+# this is just a symlinks and needs no changing
+docs/readme.md
