@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "redbluee",
+      "name": "Deniz Sharideh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43533494?v=4",
+      "profile": "https://github.com/redbluee",
+      "contributions": [
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "python-tools-for-students",
+  "projectOwner": "students-teach-students",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
