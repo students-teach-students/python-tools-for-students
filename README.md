@@ -91,7 +91,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/redbluee"><img src="https://avatars3.githubusercontent.com/u/43533494?v=4" width="100px;" alt="Deniz Sharideh"/><br /><sub><b>Deniz Sharideh</b></sub></a><br /><a href="#review-redbluee" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/redbluee"><img src="https://avatars3.githubusercontent.com/u/43533494?v=4" width="100px;" alt="Deniz Sharideh"/><br /><sub><b>Deniz Sharideh</b></sub></a><br /><a href="#review-redbluee" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/students-teach-students/python-tools-for-students/commits?author=redbluee" title="Documentation">📖</a> <a href="#infra-redbluee" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-redbluee" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
