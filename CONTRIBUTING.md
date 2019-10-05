@@ -59,10 +59,10 @@ issue [#9](https://github.com/students-teach-students/python-tools-for-students/
 ```
 Repository-root
 |-- material
-    |-- #<chapter_nr>_<chapter_name>
+    |-- <chapter_nr>_<chapter_name>
         |-- data
         |-- images
-        |-- #<chapter_nr>_<chapter_name>.ipynb
+        |-- <chapter_nr>_<chapter_name>.ipynb
         |-- TL_DR.md
         |-- additional_materials.md
         |-- Examples
@@ -70,6 +70,7 @@ Repository-root
             |-- example1.ipynb
             |-- ...
     |-- cheat_sheets.md
+    |-- tutorials.md
     |-- code_snippets.md
 ```
 
@@ -94,7 +95,11 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 5) Start `jupyter lab` in the folder of your local copy and write the changes you want.
 
-6) Commit your changes and push your branch to GitHub:
+6) Make sure all tests pass:
+
+   `$ tox`
+
+7) Commit your changes and push your branch to GitHub:
 
    `$ git add .`
 
@@ -102,7 +107,7 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
    `$ git push origin name-of-your-bugfix-or-feature`
 
-7) Submit a pull request through the GitHub website.
+8) Submit a pull request through the GitHub website.
 
 ### Testing
 
