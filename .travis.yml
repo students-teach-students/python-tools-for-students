@@ -6,11 +6,11 @@ cache: pip
 jobs:
   fast_finish: true
   include:
-    # - python: 3.6
-    #   name: flake8
-    #   env: TOXENV=flake8
-    #   after_success:
-    #     - echo "done"
+    - python: 3.6
+      name: flake8-nb
+      env: TOXENV=flake8-nb
+      after_success:
+        - echo "done"
 
     - language: generic
       python: 3.6
