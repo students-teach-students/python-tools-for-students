@@ -9,6 +9,8 @@ Welcome to python-tools-for-students's documentation!
     getting_started
     material
     examples
+    material/cheat_sheets
+    material/tutorials
     contributing
     authors
 
