@@ -4,3 +4,4 @@
 # and the docs won't build properly.
 export MSYS=winsymlinks:nativestrict
 ln -srf ../README.md readme.md
+ln -srf ../CONTRIBUTING.md contributing.md
