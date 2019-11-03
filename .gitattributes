@@ -1,0 +1,5 @@
+*	text=lf
+*.bat	text eol=crlf
+
+docs/readme.md	symlink=file
+docs/contributing.md	symlink=file
