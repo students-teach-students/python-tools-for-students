@@ -8,6 +8,8 @@ Welcome to python-tools-for-students's documentation!
     readme
     getting_started
     material
+    examples
+    contributing
     authors
 
 Indices and tables
