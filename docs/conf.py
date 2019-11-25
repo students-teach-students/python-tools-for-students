@@ -126,6 +126,10 @@ mathjax_config = {
     "TeX": {"equationNumbers": {"autoNumber": "AMS", "useLabelIds": True}}
 }
 
+linkcheck_ignore = [
+    r'https://github\.com/students-teach-students/python-tools-for-students/actions',
+]
+
 # -- Options for HTML output -------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
