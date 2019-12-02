@@ -3,7 +3,7 @@ Welcome to python-tools-for-students's documentation!
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contents:
+    :caption: Learning:
 
     readme
     getting_started
@@ -11,8 +11,13 @@ Welcome to python-tools-for-students's documentation!
     examples
     material/cheat_sheets
     material/tutorials
-    contributing
     authors
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Getting involved:
+
+    contributing
 
 Indices and tables
 ==================
