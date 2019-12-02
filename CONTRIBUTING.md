@@ -9,11 +9,12 @@ You can contribute in many ways:
 
 ### Report Errors
 
-Report errors at https://github.com/students-teach-students/python-tools-for-students/issues.
+Report errors as an [issue at github](https://github.com/students-teach-students/python-tools-for-students/issues).
 
 If you are reporting an error, please include:
 
 - Any details about your local setup that might be helpful in troubleshooting.
+
 - Detailed steps to reproduce the bug.
 
 ### Fix Bugs
@@ -44,12 +45,14 @@ that others will have problems understanding
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/students-teach-students/python-tools-for-students/issues.
+The best way to send feedback is to file an [issue at github](https://github.com/students-teach-students/python-tools-for-students/issues).
 
 If you are proposing a topic:
 
 - Explain in detail what you would want to learn and why it should be included.
+
 - Keep the scope as narrow as possible and add an example, to make it easier to implement.
+
 - Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
 
@@ -63,7 +66,7 @@ To make navigating through the material consistent and also give new (and old) c
 on how to organize and name files and folders, the following structure was proposed in
 issue [#9](https://github.com/students-teach-students/python-tools-for-students/issues/9):
 
-```
+```bash
 Repository-root
 |-- material
     |-- <chapter_nr>_<chapter_name>
@@ -96,6 +99,7 @@ Repository-root
 Ready to contribute? Here's how to set up `python-tools-for-students` for local development.
 
 1. Fork the `python-tools-for-students` repo on GitHub.
+
 2. Clone your fork locally:
 
    `$ git clone git@github.com:your_name_here/python-tools-for-students.git`
@@ -136,8 +140,11 @@ To make sure that all our notebooks are working properly and
 have a uniform code style, we test them with:
 
 - [`tox`](https://tox.readthedocs.io/en/latest/)
+
 - [`pytest`](https://pytest.org/en/latest/)
+
 - [`nbval`](https://github.com/computationalmodelling/nbval)
+
 - [`flake8-nb`](https://flake8-nb.readthedocs.io)
 
 ### nbval
@@ -226,8 +233,13 @@ $ conda install make
 Before you submit a pull request, check that it meets these guidelines:
 
 - Respect our folder structure, since this guarantees a consistent and easy to navigate experience for everyone.
+
 - Make sure that the notebooks work, when running `Restart Kernel and Run All ...` and the tests pass.
+
 - If your code needs a 3rd party library to work and it is not yet present in the `requirements.txt`,
+
   please add it with a minimum version (i.e.:&nbsp;`package_name>=1.0.0`&nbsp;).
+
 - Add your changes to the docs and make sure that they render properly.
+
 - Add yourself as contributor in `docs/authors.rst`.
