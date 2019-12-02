@@ -126,6 +126,10 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 8. Submit a pull request through the GitHub website.
 
+**Note:**
+
+You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if haven't done so before.
+
 ## Testing
 
 To make sure that all our notebooks are working properly and
@@ -160,6 +164,10 @@ bad code.
 
 ## Add your changes to the docs
 
+To make the provided information more accessible (i.e. on mobile when you are on your way to university),
+we also generate documentation as an html page, PDF and epub, which is published at
+[Read The Docs](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest).
+
 ### Adding notebooks
 
 Notebooks are included in the docs using
@@ -183,19 +191,35 @@ which point to the `materials` folder.
 In order for this to work for all operating systems, you should add
 a new line to `docs/refresh_symlinks.sh`,
 and run it to create a `symbolic links` in the `docs` folder.
-After that you should add the symlink to `.gitattributes` as `symlink=file`.
+After that you should add the `symlink` to `.gitattributes` as `symlink=file`.
 After that you can include it in any `*.rst` file as you would normally.
 
-### Building the docs
+### Building the docs locally
 
-To build the documentation, open a terminal, navigate to the `docs` folder and run `make html`. This will create the documentation inside the folder `docs/_build/html`.
+To build the documentation, open a terminal, navigate to the `docs` folder and run `make html`.
+This will create the documentation inside the folder `docs/_build/html`.
 
 **Note:**
 
-If you are on Windows the `git bash` doesn't come with `make`
-builtin, but by following
-[this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make)
-you can add it.
+For the docs to be build it is mandatory that you use a conda installation of python or at least have conda installed.
+This is due to the fact that the notebook inclusion in the docs utilizes the tool [pandoc](https://pandoc.org/).
+Even so `pandoc` is present in many package manager repository indices, this is mostly an too old version,
+which is why we recommend to use the version provided by conda.
+
+```bash
+$ conda install pandoc
+```
+
+This also requires that the terminal you execute the make command with knows about the conda binary path/s (see [Using Anaconda only if needed](https://python-tools-for-students.readthedocs.io/en/latest/getting_started.html#using-anaconda-only-if-needed)).
+
+**Note for Windows users:**
+
+If you are on Windows you might not have the `make` command installed.
+With conda this can be easily fixed by running:
+
+```bash
+$ conda install make
+```
 
 ## Pull Request Guidelines
 
@@ -204,6 +228,6 @@ Before you submit a pull request, check that it meets these guidelines:
 - Respect our folder structure, since this guarantees a consistent and easy to navigate experience for everyone.
 - Make sure that the notebooks work, when running `Restart Kernel and Run All ...` and the tests pass.
 - If your code needs a 3rd party library to work and it is not yet present in the `requirements.txt`,
-  please add it with a minimum version (i.e.:&nbsp;`package_name>=1.0.0`).
+  please add it with a minimum version (i.e.:&nbsp;`package_name>=1.0.0`&nbsp;).
 - Add your changes to the docs and make sure that they render properly.
 - Add yourself as contributor in `docs/authors.rst`.
