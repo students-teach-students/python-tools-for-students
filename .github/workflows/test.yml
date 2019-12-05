@@ -16,7 +16,7 @@ jobs:
           pip install flake8-nb
       - name: Lint with flake8-nb
         run: |
-          flake8 flake8_nb material
+          flake8-nb material
 
   docs:
     runs-on: ubuntu-latest
