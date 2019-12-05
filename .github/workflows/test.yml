@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   code-style:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Set up Python 3.7
@@ -54,6 +54,7 @@ jobs:
           pip freeze
           pandoc -v
       - name: Build docs
+        continue-on-error: true
         run: make --directory=docs clean linkcheck
 
   test:
