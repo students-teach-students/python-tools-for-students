@@ -19,14 +19,15 @@ If you are reporting an error, please include:
 
 ### Fix Bugs
 
-Look through the GitHub issues for bugs. Anything tagged with "bug"
+Look through the [GitHub issues](https://github.com/students-teach-students/python-tools-for-students/issues) for bugs. Anything tagged with "bug"
 and "help wanted" is open to whoever wants to implement it.
 You might also encounter typos, spelling and grammar errors, we appreciate all help,
 we can get, to make this the best learning experience possible, so don't be shy and contribute. :)
 
 ### Implement Topics
 
-Look through the GitHub issues for features. Anything tagged with "enhancement"
+Look through the [GitHub issues](https://github.com/students-teach-students/python-tools-for-students/issues) for features. 
+Anything tagged with "enhancement"
 and "help wanted" is open to whoever wants to implement it.
 Tell us that you are working on this topic, so the same work won't be done by
 two people at the same time.
@@ -35,17 +36,17 @@ Of course if someone is already working on a topic you can always offer your hel
 ### Write `TL;DR`'s or Examples
 
 We will leave the writing of `TL;DR`'s and examples mostly to the community,
-since this is the perfect opportunity, for you to get involved.
+since this is the perfect opportunity, for __you__ to get involved.
 Not only is it a great start to work with git on an open source project,
 it will also help you to amplify your understanding of the tools we are teaching you.
 If you are writing examples make sure that they are documented (markdown cells)
 and explain what/why it is being done.
 Also make sure that the example you are using isn't so specific to your field of studying,
-that others will have problems understanding
+that others will have problems understanding (i.e. no detailed knowlage of quantum mechanics should be needed to understand your example.)
 
 ### Submit Feedback
 
-The best way to send feedback is to file an [issue at github](https://github.com/students-teach-students/python-tools-for-students/issues).
+The best way to send feedback, is to file an [issue at Github](https://github.com/students-teach-students/python-tools-for-students/issues).
 
 If you are proposing a topic:
 
@@ -132,7 +133,14 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 **Note:**
 
-You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if haven't done so before.
+You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you haven't done so before.
+Especially for beginners we recomment [GitKraken](), which is a graphical user interface for `git`. 
+But you should definitly learn how to work with `git` in a terminal, since you might have to work in an environment where you won't have a graphical user interface (i.e. `ssh` connection to a server/cluster where you want to do your calculation on) or something doesn't work as expected and you need to fix it.
+
+**Note for Windows users:**
+
+If you want the care free package of a 'properly' configured Posix like shell,
+just install [`cmder full`](https://cmder.net/) with [get-cmder](https://github.com/s-weigand/get-cmder).
 
 ## Testing
 
@@ -146,6 +154,8 @@ have a uniform code style, we test them with:
 - [`nbval`](https://github.com/computationalmodelling/nbval)
 
 - [`flake8-nb`](https://flake8-nb.readthedocs.io)
+
+Where `tox`, `pytest`and `nbval` ensure that the provided notebooks reproducable work with all supported python versions and `nbval` ensures the [code quality](). 
 
 ### nbval
 
@@ -165,7 +175,7 @@ and
 As for `nbval` we also encourage to use
 [cell tags](https://flake8-nb.readthedocs.io/en/latest/usage.html#cell-tags)
 to configure the reported code style violations of `flake8-nb`.
-Please only use the scarcely and when absolutely needed,
+Please only use this scarcely and when absolutely needed,
 i.e. if you have a cell with different language code or if you want to showcase
 bad code.
 
@@ -183,7 +193,7 @@ and
 [`nbsphinx-link`](https://github.com/vidartf/nbsphinx-link).
 In order to add a notebook to the docs, you need to create a `*.nblink`
 file in the appropriate folder in the docs and add its path to
-`docs/material.rst`/`docs/examples.rst`.
+`docs/material.rst` / `docs/examples.rst`.
 If your notebooks contain extra media like images,
 you need to add them as `extra-media` entry in the `*.nblink` file.
 
@@ -192,12 +202,12 @@ you need to add them as `extra-media` entry in the `*.nblink` file.
 Markdown files are included in the docs using
 [`recommonmark`](https://recommonmark.readthedocs.io/).
 Sadly `recommonmark` does not recognize files outside of the docs
-root folder (`docs`). Not to copy files and maintain two versions,
+root folder (`docs`). So in order not to copy files and maintain two versions,
 the best solution is to use `symbolic links` inside the `docs` folder
-which point to the `materials` folder.
+which point to the appropriate file.
 In order for this to work for all operating systems, you should add
 a new line to `docs/refresh_symlinks.sh`,
-and run it to create a `symbolic links` in the `docs` folder.
+and run it to create a `symbolic link` in the `docs` folder.
 After that you should add the `symlink` to `.gitattributes` as `symlink=file`.
 After that you can include it in any `*.rst` file as you would normally.
 
