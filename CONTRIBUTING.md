@@ -203,7 +203,7 @@ After that you can include it in any `*.rst` file as you would normally.
 
 ### Building the docs locally
 
-To build the documentation, open a terminal, navigate to the `docs` folder and run `make html`.
+To build the documentation, open a terminal, navigate to the `docs` folder and run `make html` (Posix like) / `make.bat html` (Windows).
 This will create the documentation inside the folder `docs/_build/html`.
 
 **Note:**
@@ -221,12 +221,8 @@ This also requires that the terminal you execute the make command with knows abo
 
 **Note for Windows users:**
 
-If you are on Windows you might not have the `make` command installed.
-With conda this can be easily fixed by running:
-
-```bash
-$ conda install make
-```
+If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/), you might not have the `make` command installed.
+To istall `make` into gitbash you can follow [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
 
 ## Pull Request Guidelines
 
