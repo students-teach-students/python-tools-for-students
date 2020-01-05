@@ -63,13 +63,13 @@ you can create a batch script ``use_conda.bat`` in the folder
 .. code-block:: batch
 
     @echo off
-    SET ANACONDA_INSTALL_DIR="<anaconda-install-folder>"
-    SET CONDA_PATHS="%ANACONDA_INSTALL_DIR%"
-    SET CONDA_PATHS="%ANACONDA_INSTALL_DIR%\Library\mingw-w64\bin;%CONDA_PATHS%"
-    SET CONDA_PATHS="%ANACONDA_INSTALL_DIR%\Library\usr\bin;%CONDA_PATHS%"
-    SET CONDA_PATHS="%ANACONDA_INSTALL_DIR%\Library\bin;%CONDA_PATHS%"
-    SET CONDA_PATHS="%ANACONDA_INSTALL_DIR%\Scripts;%CONDA_PATHS%"
-    SET PATH="%CONDA_PATHS%;%PATH%"
+    SET ANACONDA_INSTALL_DIR=<anaconda-install-folder>
+    SET CONDA_PATHS=%ANACONDA_INSTALL_DIR%
+    SET CONDA_PATHS=%ANACONDA_INSTALL_DIR%\Library\mingw-w64\bin;%CONDA_PATHS%
+    SET CONDA_PATHS=%ANACONDA_INSTALL_DIR%\Library\usr\bin;%CONDA_PATHS%
+    SET CONDA_PATHS=%ANACONDA_INSTALL_DIR%\Library\bin;%CONDA_PATHS%
+    SET CONDA_PATHS=%ANACONDA_INSTALL_DIR%\Scripts;%CONDA_PATHS%
+    SET PATH=%CONDA_PATHS%;%PATH%
 
 
 This will temporarily add the conda paths to the open terminal and
