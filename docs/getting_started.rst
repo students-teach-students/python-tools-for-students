@@ -56,8 +56,8 @@ the following function to their shell configuration file
 
 **CMD on Windows:**
 
-If you are on windows and for some reason want to use CMD as your terminal,
-you can create a batch script ``use_conda.bat`` in the folder
+If you are working on Windows and for some reason want to use CMD as your terminal,
+you can create a batch script ``use_conda.bat`` in a folder which is part of the PATH variable i.e.
 ``C:\Windows`` (this needs Admin rights and allows autocomplete).
 
 .. code-block:: batch
@@ -72,9 +72,10 @@ you can create a batch script ``use_conda.bat`` in the folder
     SET PATH=%CONDA_PATHS%;%PATH%
 
 
-This will temporarily add the conda paths to the open terminal and
-allows you to simply call ``use_conda``/``use_conda`` (which in both cases
-autocompletes), when you want to use conda.
+This will temporarily adds the conda paths to the open terminal and
+allows you to simply call ``use_conda``/``use_conda.bat`` (which in both cases
+autocompletes), when you want to use conda. 
+When you open a new terminal, it won't know about conda and work as it normally does.
 
 .. note::
     For this to work you need to replace ``<anaconda-install-folder>``,
@@ -83,7 +84,8 @@ autocompletes), when you want to use conda.
 .. note::
     If you use the other software more sparsely than the conda python,
     you could of course, just turn this approach around and prepend
-    the path to the system python to the ``PATH`` variable
+    the path to the system python to the ``PATH`` variable, 
+    when you don't want to use conda.
 
 Pure CPython
 ^^^^^^^^^^^^
