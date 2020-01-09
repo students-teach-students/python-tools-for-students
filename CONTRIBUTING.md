@@ -26,7 +26,7 @@ we can get, to make this the best learning experience possible, so don't be shy 
 
 ### Implement Topics
 
-Look through the [GitHub issues](https://github.com/students-teach-students/python-tools-for-students/issues) for features. 
+Look through the [GitHub issues](https://github.com/students-teach-students/python-tools-for-students/issues) for features.
 Anything tagged with "enhancement"
 and "help wanted" is open to whoever wants to implement it.
 Tell us that you are working on this topic, so the same work won't be done by
@@ -36,13 +36,13 @@ Of course if someone is already working on a topic you can always offer your hel
 ### Write `TL;DR`'s or Examples
 
 We will leave the writing of `TL;DR`'s and examples mostly to the community,
-since this is the perfect opportunity, for __you__ to get involved.
+since this is the perfect opportunity, for **you** to get involved.
 Not only is it a great start to work with git on an open source project,
 it will also help you to amplify your understanding of the tools we are teaching you.
 If you are writing examples make sure that they are documented (markdown cells)
 and explain what/why it is being done.
 Also make sure that the example you are using isn't so specific to your field of studying,
-that others will have problems understanding (i.e. no detailed knowlage of quantum mechanics should be needed to understand your example.)
+that others will have problems understanding (i.e. no detailed knowledge of quantum mechanics should be needed to understand your example.)
 
 ### Submit Feedback
 
@@ -134,8 +134,8 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 **Note:**
 
 You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you haven't done so before.
-Especially for beginners we recomment [GitKraken](), which is a graphical user interface for `git`. 
-But you should definitly learn how to work with `git` in a terminal, since you might have to work in an environment where you won't have a graphical user interface (i.e. `ssh` connection to a server/cluster where you want to do your calculation on) or something doesn't work as expected and you need to fix it.
+Especially for beginners we recommend [GitKraken](https://www.gitkraken.com/), which is a graphical user interface for `git`.
+But you should definitely learn how to work with `git` in a terminal, since you might have to work in an environment where you won't have a graphical user interface (i.e. `ssh` connection to a server/cluster where you want to do your calculation on) or something doesn't work as expected and you need to fix it.
 
 **Note for Windows users:**
 
@@ -155,7 +155,7 @@ have a uniform code style, we test them with:
 
 - [`flake8-nb`](https://flake8-nb.readthedocs.io)
 
-Where `tox`, `pytest`and `nbval` ensure that the provided notebooks reproducable work with all supported python versions and `nbval` ensures the [code quality](). 
+Where `tox`, `pytest`and `nbval` ensure that the provided notebooks reproducible work with all supported python versions and `flake8-nb` ensures the [code quality](https://realpython.com/python-code-quality/).
 
 ### nbval
 
@@ -227,12 +227,13 @@ which is why we recommend to use the version provided by conda.
 $ conda install pandoc
 ```
 
-This also requires that the terminal you execute the make command with knows about the conda binary path/s (see [Using Anaconda only if needed](https://python-tools-for-students.readthedocs.io/en/latest/getting_started.html#using-anaconda-only-if-needed)).
+This also requires that the terminal you execute the make command with knows about the conda binary path/s
+(see [Using Anaconda only if needed](https://python-tools-for-students.readthedocs.io/en/latest/getting_started.html#using-anaconda-only-if-needed)).
 
 **Note for Windows users:**
 
 If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/), you might not have the `make` command installed.
-To istall `make` into gitbash you can follow [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
+To install `make` into git bash you can follow [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
 
 ## Pull Request Guidelines
 

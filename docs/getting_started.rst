@@ -43,7 +43,7 @@ since this might cause conflicts and/or break that software.
 
 **Posix like Shells:**
 
-Users of a Posix like terminal (i.e. ``bash``/``git-bash``), can simply add
+Users of a Posix like terminal (i.e. ``bash``), can simply add
 the following function to their shell configuration file
 (i.e. ``~/.bashrc``/``~/.bash_profile``)
 
@@ -74,7 +74,7 @@ you can create a batch script ``use_conda.bat`` in a folder which is part of the
 
 This will temporarily adds the conda paths to the open terminal and
 allows you to simply call ``use_conda``/``use_conda.bat`` (which in both cases
-autocompletes), when you want to use conda. 
+autocompletes), when you want to use conda.
 When you open a new terminal, it won't know about conda and work as it normally does.
 
 .. note::
@@ -84,7 +84,7 @@ When you open a new terminal, it won't know about conda and work as it normally 
 .. note::
     If you use the other software more sparsely than the conda python,
     you could of course, just turn this approach around and prepend
-    the path to the system python to the ``PATH`` variable, 
+    the path to the system python to the ``PATH`` variable,
     when you don't want to use conda.
 
 Pure CPython
