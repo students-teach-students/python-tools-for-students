@@ -180,6 +180,7 @@ just try installing them by running this command in your terminal:
 
     $ pip install -r requirements.txt
 
+===================
 Run it in the cloud
 ===================
 
