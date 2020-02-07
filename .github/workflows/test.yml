@@ -5,7 +5,7 @@ jobs:
   code-style:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
         with:
@@ -21,9 +21,9 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup conda
-        uses: s-weigand/setup-conda@master
+        uses: s-weigand/setup-conda@v1
         with:
           conda-channels: conda-forge
       - name: Install dependencies
@@ -40,9 +40,9 @@ jobs:
   docs-link:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup conda
-        uses: s-weigand/setup-conda@master
+        uses: s-weigand/setup-conda@v1
         with:
           conda-channels: conda-forge
       - name: Install dependencies
@@ -66,7 +66,7 @@ jobs:
         python-version: [3.6, 3.7, 3.8]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
         with:
