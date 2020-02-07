@@ -3,9 +3,9 @@ on: [push, pull_request]
 
 jobs:
   code-style:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
         with:
@@ -16,14 +16,14 @@ jobs:
           pip install flake8-nb
       - name: Lint with flake8-nb
         run: |
-          flake8 flake8_nb material
+          flake8-nb material
 
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup conda
-        uses: s-weigand/setup-conda@master
+        uses: s-weigand/setup-conda@v1
         with:
           conda-channels: conda-forge
       - name: Install dependencies
@@ -40,9 +40,9 @@ jobs:
   docs-link:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup conda
-        uses: s-weigand/setup-conda@master
+        uses: s-weigand/setup-conda@v1
         with:
           conda-channels: conda-forge
       - name: Install dependencies
@@ -54,6 +54,7 @@ jobs:
           pip freeze
           pandoc -v
       - name: Build docs
+        continue-on-error: true
         run: make --directory=docs clean linkcheck
 
   test:
@@ -62,10 +63,10 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        python-version: [3.6, 3.7]
+        python-version: [3.6, 3.7, 3.8]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
         with:
