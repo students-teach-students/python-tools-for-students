@@ -4,6 +4,7 @@
 Getting started
 ***************
 
+==============
 Run it locally
 ==============
 
@@ -47,6 +48,8 @@ Users of a Posix like terminal (i.e. ``bash``), can simply add
 the following function to their shell configuration file
 (i.e. ``~/.bashrc``/``~/.bash_profile``)
 
+Linux/MacOs:
+
 .. code-block:: shell
 
     ANACONDA_BIN_DIR=<anaconda-install-folder>/bin
@@ -54,11 +57,25 @@ the following function to their shell configuration file
         export PATH="$ANACONDA_BIN_DIR:$PATH"
     }
 
+Windows (git-bash, MinGw):
+
+.. code-block:: shell
+
+    ANACONDA_BIN_DIR=<anaconda-install-folder>/bin
+    use_conda(){
+        CONDA_PATHS="$ANACONDA_INSTALL_DIR"
+        CONDA_PATHS="$ANACONDA_INSTALL_DIR\Library\mingw-w64\bin;$CONDA_PATHS"
+        CONDA_PATHS="$ANACONDA_INSTALL_DIR\Library\usr\bin;$CONDA_PATHS"
+        CONDA_PATHS="$ANACONDA_INSTALL_DIR\Library\bin;$CONDA_PATHS"
+        CONDA_PATHS="$ANACONDA_INSTALL_DIR\Scripts;$CONDA_PATHS"
+        export PATH="$CONDA_PATHS:$PATH"
+    }
+
 **CMD on Windows:**
 
 If you are working on Windows and for some reason want to use CMD as your terminal,
-you can create a batch script ``use_conda.bat`` in a folder which is part of the PATH variable i.e.
-``C:\Windows`` (this needs Admin rights and allows autocomplete).
+you can create a batch script ``use_conda.bat`` in a folder which is part of the PATH variable (i.e.
+``C:\Windows``, this needs Admin rights).
 
 .. code-block:: batch
 
