@@ -155,17 +155,15 @@ have a uniform code style, we test them with:
 
 - [`flake8-nb`](https://flake8-nb.readthedocs.io)
 
-Where `tox`, `pytest`and `nbval` ensure that the provided notebooks reproducible work with all supported python versions and `flake8-nb` ensures the [code quality](https://realpython.com/python-code-quality/).
+Where `tox`, `pytest` and `nbval` ensure that the provided notebooks reproducibly work with all supported python versions and `flake8-nb` ensures the [code style](https://realpython.com/python-code-quality/).
 
 ### nbval
 
 In some cases the output might depend on the operating system/current time or you want to
 showcase an `Exception`, in those cases you can use `Tags` (meta information)
 to mark a cell for `nbval` to change its testing behavior.
-For more information have a look at
-`nbval`'s documentation
-[Avoid output comparison for specific cells
-](https://nbval.readthedocs.io/en/latest/index.html#Avoid-output-comparison-for-specific-cells)
+For more information have a look at `nbval`'s documentation
+[Avoid output comparison for specific cells](https://nbval.readthedocs.io/en/latest/index.html#Avoid-output-comparison-for-specific-cells)
 and
 [Using tags instead of comments](https://nbval.readthedocs.io/en/latest/index.html#Using-tags-instead-of-comments)
 .
@@ -183,7 +181,7 @@ bad code.
 
 To make the provided information more accessible (i.e. on mobile when you are on your way to university),
 we also generate documentation as an html page, PDF and epub, which is published at
-[Read The Docs](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest).
+[Read The Docs](https://readthedocs.org/projects/python-tools-for-students).
 
 ### Adding notebooks
 
@@ -209,11 +207,13 @@ In order for this to work for all operating systems, you should add
 a new line to `docs/refresh_symlinks.sh`,
 and run it to create a `symbolic link` in the `docs` folder.
 After that you should add the `symlink` to `.gitattributes` as `symlink=file`.
-After that you can include it in any `*.rst` file as you would normally.
+After that you can include it in any `*.rst` file
+[as you would normally](https://www.sphinx-doc.org/en/master/usage/quickstart.html).
 
 ### Building the docs locally
 
-To build the documentation, open a terminal, navigate to the `docs` folder and run `make html` (Posix like) / `make.bat html` (Windows).
+To build the documentation, open a terminal, navigate to the `docs` folder and
+run `make html` (Posix like) / `make.bat html` (Windows).
 This will create the documentation inside the folder `docs/_build/html`.
 
 **Note:**
@@ -221,7 +221,7 @@ This will create the documentation inside the folder `docs/_build/html`.
 For the docs to be build it is mandatory that you use a conda installation of python or at least have conda installed.
 This is due to the fact that the notebook inclusion in the docs utilizes the tool [pandoc](https://pandoc.org/).
 Even so `pandoc` is present in many package manager repository indices, this is mostly an too old version,
-which is why we recommend to use the version provided by conda.
+which is why we recommend to use the [version provided by conda](https://anaconda.org/conda-forge/pandoc).
 
 ```bash
 $ conda install pandoc
@@ -232,8 +232,11 @@ This also requires that the terminal you execute the make command with knows abo
 
 **Note for Windows users:**
 
-If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/), you might not have the `make` command installed.
-To install `make` into git bash you can follow [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
+If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/),
+you might not have the `make` command installed.
+To install `make` into git bash you can follow
+[this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use
+`install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
 
 ## Pull Request Guidelines
 
