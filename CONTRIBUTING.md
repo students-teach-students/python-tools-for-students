@@ -131,16 +131,27 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 8. Submit a pull request through the GitHub website.
 
-**Note:**
+<div class="admonition note">
+
+<p class="admonition-title">Note:</p>
 
 You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you haven't done so before.
 Especially for beginners we recommend [GitKraken](https://www.gitkraken.com/), which is a graphical user interface for `git`.
 But you should definitely learn how to work with `git` in a terminal, since you might have to work in an environment where you won't have a graphical user interface (i.e. `ssh` connection to a server/cluster where you want to do your calculation on) or something doesn't work as expected and you need to fix it.
 
-**Note for Windows users:**
+</p>
+</div>
+
+<div class="admonition note">
+
+<p class="admonition-title">Note for Windows users:</p>
+<p>
 
 If you want the care free package of a 'properly' configured Posix like shell,
 just install [`cmder full`](https://cmder.net/) with [get-cmder](https://github.com/s-weigand/get-cmder).
+
+</p>
+</div>
 
 ## Testing
 
@@ -216,12 +227,15 @@ To build the documentation, open a terminal, navigate to the `docs` folder and
 run `make html` (Posix like) / `make.bat html` (Windows).
 This will create the documentation inside the folder `docs/_build/html`.
 
-**Note:**
+<div class="admonition note">
 
+<p class="admonition-title">Note:</p>
+<p>
 For the docs to be build it is mandatory that you use a conda installation of python or at least have conda installed.
 This is due to the fact that the notebook inclusion in the docs utilizes the tool [pandoc](https://pandoc.org/).
 Even so `pandoc` is present in many package manager repository indices, this is mostly an too old version,
 which is why we recommend to use the [version provided by conda](https://anaconda.org/conda-forge/pandoc).
+</p>
 
 ```bash
 $ conda install pandoc
@@ -230,13 +244,22 @@ $ conda install pandoc
 This also requires that the terminal you execute the make command with knows about the conda binary path/s
 (see [Using Anaconda only if needed](https://python-tools-for-students.readthedocs.io/en/latest/getting_started.html#using-anaconda-only-if-needed)).
 
-**Note for Windows users:**
+</div>
+
+<div class="admonition note">
+
+<p class="admonition-title">Note for Windows users:</p>
+<p>
 
 If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/),
 you might not have the `make` command installed.
 To install `make` into git bash you can follow
 [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use
 `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
+
+</p>
+
+</div>
 
 ## Pull Request Guidelines
 
