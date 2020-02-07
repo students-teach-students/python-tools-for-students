@@ -8,4 +8,4 @@
 
 - Mobile Apps
 
-  - [Best app to Learn Python (Blog-post)](https://www.itworldnew.com/best-app-to-learn-python/?fbclid=IwAR3Eya_8bQ_gYB2n_3-Xsq7-pfviBCOBm0EG7Qs5aHZo4f0qedkIzRn3RnA)
+  - [Best app to Learn Python (Blog-post)](https://www.itworldnew.com/best-app-to-learn-python)
