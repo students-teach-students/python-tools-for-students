@@ -35,7 +35,9 @@ jobs:
           pip freeze
           pandoc -v
       - name: Build docs
-        run: make --directory=docs clean html
+        run: |
+          rm -rf docs/_build
+          python -m sphinx -b html docs docs/_build
 
   docs-link:
     runs-on: ubuntu-latest
@@ -55,7 +57,9 @@ jobs:
           pandoc -v
       - name: Build docs
         continue-on-error: true
-        run: make --directory=docs clean linkcheck
+        run: |
+          rm -rf docs/_build
+          python -m sphinx -b linkcheck docs docs/_build
 
   test:
     runs-on: ${{ matrix.os }}
