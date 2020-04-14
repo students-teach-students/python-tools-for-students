@@ -233,7 +233,7 @@ This will create the documentation inside the folder `docs/_build/html`.
 <p>
 For the docs to be build it is mandatory that you use a conda installation of python or at least have conda installed.
 This is due to the fact that the notebook inclusion in the docs utilizes the tool [pandoc](https://pandoc.org/).
-Even so `pandoc` is present in many package manager repository indices, this is mostly an too old version,
+Even so `pandoc` is present in many package manager repository indices, this is mostly a too old version,
 which is why we recommend to use the [version provided by conda](https://anaconda.org/conda-forge/pandoc).
 </p>
 
