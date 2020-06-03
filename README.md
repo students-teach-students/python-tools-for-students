@@ -21,9 +21,16 @@ This projects aims to teach students the basics of how to use
   - Fitting of data
   - Visualization (plotting)
 
+## Why python?
+
+Python is one the [fastest growing programming languages](https://stackoverflow.blog/2017/09/06/incredible-growth-python/),
+it is easy to learn (i.e. compared to C), is multi purpose (there is pretty much no task that can't be done in python) and it has a rich eco system of libraries for math, physics, engineering, data science and data evaluation in general.
+
+[![XKCD-comic python antigravity](https://imgs.xkcd.com/comics/python.png)]
+
 ## Where are we with this project right now?
 
-At the moment we are gathering ideas what to teach and build a useful
+At the moment we are writing teaching material and gather ideas what to teach and build a useful
 structure to teach the materials. Which is why **this is your chance**
 to tell us what you want to learn. Just open an issue, write about what you want to learn
 (examples help with explanations) and we can discuss
