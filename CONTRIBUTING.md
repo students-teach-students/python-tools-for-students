@@ -261,11 +261,22 @@ To install `make` into git bash you can follow
 
 </div>
 
+## Style guide
+
+To make the learning and reading experience as pleasant and uniform as possible,
+as well as giving you pointers to possible pitfalls, we added this style guide.
+Before you write new content you should check back here, see if something has changed and
+also refresh your memory on what the style rules for this project are.
+
+- Always capitalize keys for keyboard shortcuts (i.e. `Shift+Ctrl`)
+- Always write commands which can be executed in lower case (i.e. `Jupiter-lab` should be `jupyter-lab`)
+- No starting or tailing whitespaces in inline equations markdown cells (i.e.`$ \int $` should be `$\int$`), since this will break in the docs ([see](https://nbsphinx.readthedocs.io/en/0.4.3/markdown-cells.html#Equations))
+
 ## Pull Request Guidelines
 
 Before you submit a pull request, check that it meets these guidelines:
 
-- Respect our folder structure, since this guarantees a consistent and easy to navigate experience for everyone.
+- Respect our folder structure and style guide, since this guarantees a consistent and easy to navigate experience for everyone.
 
 - Make sure that the notebooks work, when running `Restart Kernel and Run All ...` and the tests pass.
 
