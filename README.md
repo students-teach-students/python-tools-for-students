@@ -2,7 +2,8 @@
 [![Documentation Status](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest)](https://python-tools-for-students.readthedocs.io/en/latest/?badge=latest)
 [![Notebook Viewer (nbviewer)](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg?sanitize=true)](https://nbviewer.jupyter.org/github/students-teach-students/python-tools-for-students/tree/master/material/)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab/tree/material)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors) [![Join the chat at https://gitter.im/students-teach-students/python-tools-for-students](https://badges.gitter.im/students-teach-students/python-tools-for-students.svg)](https://gitter.im/students-teach-students/python-tools-for-students?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![Join the chat at https://gitter.im/students-teach-students/python-tools-for-students](https://badges.gitter.im/students-teach-students/python-tools-for-students.svg)](https://gitter.im/students-teach-students/python-tools-for-students?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # python-tools-for-students
 
@@ -106,6 +107,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
