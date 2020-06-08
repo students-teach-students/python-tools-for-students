@@ -94,14 +94,18 @@ to know the terms we introduce in english, since this gives you access to a bigg
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/redbluee"><img src="https://avatars3.githubusercontent.com/u/43533494?v=4" width="100px;" alt="Deniz Sharideh"/><br /><sub><b>Deniz Sharideh</b></sub></a><br /><a href="#review-redbluee" title="Reviewed Pull Requests">👀</a> <a href="#ideas-redbluee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-redbluee" title="Project Management">📆</a> <a href="#maintenance-redbluee" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/s-weigand"><img src="https://avatars2.githubusercontent.com/u/9513634?v=4" width="100px;" alt="Sebastian Weigand"/><br /><sub><b>Sebastian Weigand</b></sub></a><br /><a href="https://github.com/students-teach-students/python-tools-for-students/commits?author=s-weigand" title="Documentation">📖</a> <a href="#infra-s-weigand" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-s-weigand" title="Maintenance">🚧</a> <a href="#ideas-s-weigand" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-s-weigand" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/redbluee"><img src="https://avatars3.githubusercontent.com/u/43533494?v=4" width="100px;" alt=""/><br /><sub><b>Deniz Sharideh</b></sub></a><br /><a href="https://github.com/students-teach-students/python-tools-for-students/pulls?q=is%3Apr+reviewed-by%3Aredbluee" title="Reviewed Pull Requests">👀</a> <a href="#ideas-redbluee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-redbluee" title="Project Management">📆</a> <a href="#maintenance-redbluee" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/s-weigand"><img src="https://avatars2.githubusercontent.com/u/9513634?v=4" width="100px;" alt=""/><br /><sub><b>Sebastian Weigand</b></sub></a><br /><a href="https://github.com/students-teach-students/python-tools-for-students/commits?author=s-weigand" title="Documentation">📖</a> <a href="#infra-s-weigand" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-s-weigand" title="Maintenance">🚧</a> <a href="#ideas-s-weigand" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-s-weigand" title="Project Management">📆</a></td>
+    <td align="center"><a href="http://www.nat.vu.nl/~jsnel/"><img src="https://avatars0.githubusercontent.com/u/3616369?v=4" width="100px;" alt=""/><br /><sub><b>Joris Snellenburg</b></sub></a><br /><a href="https://github.com/students-teach-students/python-tools-for-students/pulls?q=is%3Apr+reviewed-by%3Ajsnel" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
