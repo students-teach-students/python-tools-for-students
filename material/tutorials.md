@@ -8,4 +8,5 @@
 
 - Mobile Apps
 
-  - [Best app to Learn Python (Blog-post)](https://www.itworldnew.com/best-app-to-learn-python)
+  - [SoloLearn](https://www.sololearn.com/)
+  - [ProgrammingHub](https://www.programminghub.io/)
