@@ -29,6 +29,15 @@
         "ideas",
         "projectManagement"
       ]
+    },
+    {
+      "login": "jsnel",
+      "name": "Joris Snellenburg",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3616369?v=4",
+      "profile": "http://www.nat.vu.nl/~jsnel/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -36,5 +45,5 @@
   "projectOwner": "students-teach-students",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": "true"
+  "skipCi": true
 }
