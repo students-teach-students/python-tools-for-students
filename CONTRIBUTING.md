@@ -238,7 +238,7 @@ which is why we recommend to use the [version provided by conda](https://anacond
 </p>
 
 ```bash
-$ conda install pandoc
+$ conda install -c conda-forge pandoc
 ```
 
 This also requires that the terminal you execute the make command with knows about the conda binary path/s
