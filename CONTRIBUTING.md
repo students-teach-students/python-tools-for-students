@@ -21,8 +21,8 @@ If you are reporting an error, please include:
 
 Look through the [GitHub issues](https://github.com/students-teach-students/python-tools-for-students/issues) for bugs. Anything tagged with "bug"
 and "help wanted" is open to whoever wants to implement it.
-You might also encounter typos, spelling and grammar errors, we appreciate all help,
-we can get, to make this the best learning experience possible, so don't be shy and contribute. :)
+You might also encounter typos, spelling and grammar errors, we appreciate all help
+we can get to make this the best learning experience possible, so don't be shy and contribute. :)
 
 ### Implement Topics
 
@@ -36,7 +36,7 @@ Of course if someone is already working on a topic you can always offer your hel
 ### Write `TL;DR`'s or Examples
 
 We will leave the writing of `TL;DR`'s and examples mostly to the community,
-since this is the perfect opportunity, for **you** to get involved.
+since this is the perfect opportunity for **you** to get involved.
 Not only is it a great start to work with git on an open source project,
 it will also help you to amplify your understanding of the tools we are teaching you.
 If you are writing examples make sure that they are documented (markdown cells)
