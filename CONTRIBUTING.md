@@ -147,7 +147,7 @@ But you should definitely learn how to work with `git` in a terminal, since you 
 <p class="admonition-title">Note for Windows users:</p>
 <p>
 
-If you want the care free package of a 'properly' configured Posix like shell,
+If you want the care free package of a 'properly' configured Posix like shell (more powerful and feature rich command line),
 just install [`cmder full`](https://cmder.net/) with [get-cmder](https://github.com/s-weigand/get-cmder).
 
 </p>
