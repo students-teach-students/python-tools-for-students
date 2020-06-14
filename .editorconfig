@@ -22,7 +22,7 @@ indent_style = tab
 indent_size = 2
 
 # Tab indentation (no size specified)
-[Makefile]
+[{Makefile,.gitattributes}]
 indent_style = tab
 
 # Windows-style newlines

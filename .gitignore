@@ -109,8 +109,5 @@ venv.bak/
 # media files which are copied, for the docs
 docs/**/**/images/
 
-# this is just a symlinks and needs no changing
-docs/readme.md
-
 # map files for the css, generated from the scss files
 *.css.map

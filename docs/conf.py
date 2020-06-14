@@ -171,7 +171,7 @@ html_title = project + " version " + release
 # Output file base name for HTML help builder.
 htmlhelp_basename = "python_tools_for_studentsdoc"
 
-
+linkcheck_ignore = [r'https:\/\/gist\.github\.com\/.*#']
 # -- Options for LaTeX output ------------------------------------------
 
 # See https://www.sphinx-doc.org/en/master/latex.html

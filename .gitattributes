@@ -1,0 +1,7 @@
+*	text=lf
+*.bat	text eol=crlf
+
+docs/readme.md	symlink=file
+docs/contributing.md	symlink=file
+docs/material/cheat_sheets.md	symlink=file
+docs/material/tutorials.md	symlink=file
