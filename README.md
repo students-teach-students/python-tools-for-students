@@ -2,7 +2,7 @@
 [![Documentation Status](https://readthedocs.org/projects/python-tools-for-students/badge/?version=latest)](https://python-tools-for-students.readthedocs.io/en/latest/?badge=latest)
 [![Notebook Viewer (nbviewer)](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg?sanitize=true)](https://nbviewer.jupyter.org/github/students-teach-students/python-tools-for-students/tree/master/material/)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/students-teach-students/python-tools-for-students/master?urlpath=lab/tree/material)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/github/all-contributors/students-teach-students/python-tools-for-students)](#contributors)
 [![Join the chat at https://gitter.im/students-teach-students/python-tools-for-students](https://badges.gitter.im/students-teach-students/python-tools-for-students.svg)](https://gitter.im/students-teach-students/python-tools-for-students?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # python-tools-for-students
