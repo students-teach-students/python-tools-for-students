@@ -1,9 +1,6 @@
 # basic requirements
 -r requirements.txt
 
-# deployment
-bump2version>=0.5.10
-
 # testing
 tox>=3.4.0
 pytest>=5.1.3
