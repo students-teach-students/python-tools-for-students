@@ -5,13 +5,13 @@
 tox>=3.4.0
 pytest>=5.1.3
 nbval>=0.9.2
-flake8-nb>=0.1.0
+flake8-nb>=0.2.1
 
 # documentation
 Sphinx>=2.2.0
-sphinx-copybutton>=0.2.5
+sphinx-copybutton>=0.3.0
 myst-parser>=0.12.0
-sphinx-rtd-theme>=0.4.3
+sphinx-rtd-theme>=0.5.0
 nbsphinx>=0.4.2
 nbsphinx-link>=1.3.0
 ipykernel>=5.1.2
