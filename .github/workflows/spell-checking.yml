@@ -1,0 +1,16 @@
+name: "Spelling"
+on: [pull_request]
+
+jobs:
+  spell-checking:
+    name: misspell
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: misspell
+        uses: reviewdog/action-misspell@v1
+        with:
+          reporter: github-pr-review
+          github_token: ${{ secrets.github_token }}
+          level: warning
+          locale: "US"
