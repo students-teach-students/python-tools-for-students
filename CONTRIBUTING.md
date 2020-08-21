@@ -208,7 +208,7 @@ So in order not to copy files and maintain two versions, the best solution is to
 inside the `docs` folder with the following code, pointing to the appropriate file.
 
 ````md
-```{include} ../<relative_path_to_the_file_from_repo_root>
+```{include} <relative_path_to_the_file_to_be_included>
 
 ```
 ````
