@@ -101,27 +101,27 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 1. Fork the `python-tools-for-students` repo on GitHub.
 
-2. Clone your fork locally:
+1. Clone your fork locally:
 
    `$ git clone git@github.com:your_name_here/python-tools-for-students.git`
 
-3. Create a branch for local development:
+1. Create a branch for local development:
 
    `$ git checkout -b name-of-your-bugfix-or-feature`
 
    Now you can make your changes locally.
 
-4. Install all required libraries:
+1. Install all required libraries:
 
    `$ pip install -r requirements_dev.txt`
 
-5. Start `jupyter lab` in the folder of your local copy and write the changes you want.
+1. Start `jupyter lab` in the folder of your local copy and write the changes you want.
 
-6. Make sure all tests pass:
+1. Make sure all tests pass:
 
    `$ tox`
 
-7. Commit your changes and push your branch to GitHub:
+1. Commit your changes and push your branch to GitHub:
 
    `$ git add .`
 
@@ -129,7 +129,7 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
    `$ git push origin name-of-your-bugfix-or-feature`
 
-8. Submit a pull request through the GitHub website.
+1. Submit a pull request through the GitHub website.
 
 ```{note}
 
