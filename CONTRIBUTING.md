@@ -131,27 +131,20 @@ Ready to contribute? Here's how to set up `python-tools-for-students` for local 
 
 8. Submit a pull request through the GitHub website.
 
-<div class="admonition note">
-
-<p class="admonition-title">Note:</p>
+```{note}
 
 You might need to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you haven't done so before.
 Especially for beginners we recommend [GitKraken](https://www.gitkraken.com/), which is a graphical user interface for `git`.
 But you should definitely learn how to work with `git` in a terminal, since you might have to work in an environment where you won't have a graphical user interface (i.e. `ssh` connection to a server/cluster where you want to do your calculation on) or something doesn't work as expected and you need to fix it.
 
-</p>
-</div>
+```
 
-<div class="admonition note">
-
-<p class="admonition-title">Note for Windows users:</p>
-<p>
+```{admonition} Note for Windows users:
 
 If you want the care free package of a 'properly' configured Posix like shell (more powerful and feature rich command line),
 just install [`cmder full`](https://cmder.net/) with [get-cmder](https://github.com/s-weigand/get-cmder).
 
-</p>
-</div>
+```
 
 ## Testing
 
@@ -209,15 +202,17 @@ you need to add them as `extra-media` entry in the `*.nblink` file.
 ### Adding markdown files
 
 Markdown files are included in the docs using
-[`recommonmark`](https://recommonmark.readthedocs.io/).
-Sadly `recommonmark` does not recognize files outside of the docs
-root folder (`docs`). So in order not to copy files and maintain two versions,
-the best solution is to use `symbolic links` inside the `docs` folder
-which point to the appropriate file.
-In order for this to work for all operating systems, you should add
-a new line to `docs/refresh_symlinks.sh`,
-and run it to create a `symbolic link` in the `docs` folder.
-After that you should add the `symlink` to `.gitattributes` as `symlink=file`.
+[`myst-parser`](https://myst-parser.readthedocs.io/en/latest/index.html).
+Sadly `sphinx` does not recognize files outside of the docs root folder (`docs`).
+So in order not to copy files and maintain two versions, the best solution is to create a new file
+inside the `docs` folder with the following code, pointing to the appropriate file.
+
+````md
+```{include} ../<relative_path_to_the_file_from_repo_root>
+
+```
+````
+
 After that you can include it in any `*.rst` file
 [as you would normally](https://www.sphinx-doc.org/en/master/usage/quickstart.html).
 
@@ -227,15 +222,12 @@ To build the documentation, open a terminal, navigate to the `docs` folder and
 run `make html` (Posix like) / `make.bat html` (Windows).
 This will create the documentation inside the folder `docs/_build/html`.
 
-<div class="admonition note">
-
-<p class="admonition-title">Note:</p>
-<p>
+```{note}
 For the docs to be build it is mandatory that you use a conda installation of python or at least have conda installed.
 This is due to the fact that the notebook inclusion in the docs utilizes the tool [pandoc](https://pandoc.org/).
 Even so `pandoc` is present in many package manager repository indices, this is mostly a too old version,
 which is why we recommend to use the [version provided by conda](https://anaconda.org/conda-forge/pandoc).
-</p>
+```
 
 ```bash
 $ conda install -c conda-forge pandoc
@@ -244,12 +236,7 @@ $ conda install -c conda-forge pandoc
 This also requires that the terminal you execute the make command with knows about the conda binary path/s
 (see [Using Anaconda only if needed](https://python-tools-for-students.readthedocs.io/en/latest/getting_started.html#using-anaconda-only-if-needed)).
 
-</div>
-
-<div class="admonition note">
-
-<p class="admonition-title">Note for Windows users:</p>
-<p>
+```{admonition} Note for Windows users:
 
 If you are on Windows and want to use [git bash for Windows](https://gitforwindows.org/),
 you might not have the `make` command installed.
@@ -257,9 +244,7 @@ To install `make` into git bash you can follow
 [this guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058#make) or use
 `install_make_git_bash_standalone.bat` from [get-cmder](https://github.com/s-weigand/get-cmder).
 
-</p>
-
-</div>
+```
 
 ## Style guide
 
@@ -285,3 +270,7 @@ Before you submit a pull request, check that it meets these guidelines:
   please add it with a minimum version (i.e.:&nbsp;`package_name>=1.0.0`&nbsp;).
 
 - Add your changes to the docs and make sure that they render properly.
+
+```
+
+```
