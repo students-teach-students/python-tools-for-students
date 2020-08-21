@@ -1,1 +1,3 @@
-../../material/tutorials.md
+```{include} ../../material/tutorials.md
+
+```

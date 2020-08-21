@@ -32,7 +32,7 @@ extensions = [
     "nbsphinx",
     "nbsphinx_link",
     "sphinx_copybutton",
-    "recommonmark",
+    "myst_parser",
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.extlinks",
