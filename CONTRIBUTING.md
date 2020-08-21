@@ -270,7 +270,3 @@ Before you submit a pull request, check that it meets these guidelines:
   please add it with a minimum version (i.e.:&nbsp;`package_name>=1.0.0`&nbsp;).
 
 - Add your changes to the docs and make sure that they render properly.
-
-```
-
-```
