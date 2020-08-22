@@ -32,7 +32,7 @@ extensions = [
     "nbsphinx",
     "nbsphinx_link",
     "sphinx_copybutton",
-    "recommonmark",
+    "myst_parser",
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.extlinks",
@@ -127,7 +127,7 @@ mathjax_config = {
 }
 
 linkcheck_ignore = [
-    r'https://github\.com/students-teach-students/python-tools-for-students/actions',
+    r"https://github\.com/students-teach-students/python-tools-for-students/actions",
 ]
 
 # -- Options for HTML output -------------------------------------------
@@ -146,7 +146,7 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
+# html_static_path = ["_static"]
 
 
 # -- Options for HTMLHelp output ---------------------------------------
@@ -171,7 +171,7 @@ html_title = project + " version " + release
 # Output file base name for HTML help builder.
 htmlhelp_basename = "python_tools_for_studentsdoc"
 
-linkcheck_ignore = [r'https:\/\/gist\.github\.com\/.*#']
+linkcheck_ignore = [r"https:\/\/gist\.github\.com\/.*#"]
 # -- Options for LaTeX output ------------------------------------------
 
 # See https://www.sphinx-doc.org/en/master/latex.html
